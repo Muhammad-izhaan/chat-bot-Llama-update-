@@ -9,20 +9,16 @@ client = Groq(api_key=API_KEY)  # Pass the API key while initializing the client
 
 # Predefined questions and responses
 predefined_responses = {
-    "who are you": "I am a chat-bot developed by izhaan",
-    "who is your developer": "I am designed and developed by Izhan, while i use Meta's Llama as dataset",
-    "your developer": "I am  developed by Izhaan",
-    "who is izhan": "Izhan is my developer",
-    "tell me about izhan": "You can know more about izhaan by taking a look at his website 'http://izhyverse.rf.gd",
-    "Izhan": "My master!",
-    "mother of izhaan": "Shagufta Imtiyaz",
-    " izhaan birthday": "05-05-2007",
-    "who programmed you": "Izhan programmed me",
-    "tell me about izhan": "You can know more about izhaan by taking a look at his website 'http://izhyverse.rf.gd",
-    "izhan projects": "checkout at ''http://izhyverse.rf.gd''",
-    
- 
-
+    "who are you": "I am a chat-bot developed by Izhaan",
+    "who is your developer": "I am designed and developed by Izhaan, while I use Meta's Llama as a dataset",
+    "your developer": "I am developed by Izhaan",
+    "who is Izhaan": "Izhaan is my developer",
+    "tell me about Izhaan": "You can know more about Izhaan by taking a look at his website 'http://izhyverse.rf.gd'",
+    "Izhaan": "My master!",
+    "mother of Izhaan": "Shagufta Imtiyaz",
+    "Izhaan birthday": "05-05-2007",
+    "who programmed you": "Izhaan programmed me",
+    "Izhaan projects": "Check out at 'http://izhyverse.rf.gd'",
 }
 
 @app.route('/')
@@ -65,4 +61,5 @@ def get_response():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Set the host to '0.0.0.0' and port to '10000' for Render
+    app.run(host='0.0.0.0', port=10000, debug=True)
