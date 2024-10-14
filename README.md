@@ -2,6 +2,9 @@
 
 This is a Flask-based chatbot application that uses the Groq API and predefined responses to interact with users. The bot can answer common questions and also generate responses based on user input using a conversational AI model.
 
+LIVE PREVIEW:
+https://chat-bot-llama-update-2.onrender.com/
+
 ## Features
 
 - Predefined responses for common questions.
